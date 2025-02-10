@@ -7,7 +7,11 @@ using namespace std;
 
 int main()
 {
-    double surveyno = 16500, pperweek = 15, pcitrus = 58, totalperweek, totalcitrus;
+    // input
+    double surveyno, pperweek = 15, pcitrus = 58, totalperweek, totalcitrus;
+    cout << "Please enter the number of customers surveyed:" << endl;
+    cin >> surveyno;
+    // output
     totalperweek = (pperweek / 100) * surveyno;
     totalcitrus = (pcitrus / 100) * totalperweek;
     cout << fixed << setprecision(0) << "The approximate numer of people who purchase one or more energy drinks per week is " << totalperweek << endl;
